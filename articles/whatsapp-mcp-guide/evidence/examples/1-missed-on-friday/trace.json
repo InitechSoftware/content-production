@@ -1,0 +1,79 @@
+{
+  "scenario": "1-missed-on-friday",
+  "tested_on": "2026-05-18T07:55:45+00:00",
+  "workspace": "Demo Workspace",
+  "tool_sequence": [
+    {
+      "tool": "workspace_team",
+      "elapsed_seconds": 0.25,
+      "teammates_returned": 15
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "paginated": true
+      },
+      "pages_walked": 10,
+      "elapsed_seconds_total": 8.797,
+      "chats_returned": 500
+    }
+  ],
+  "groups": [
+    {
+      "responsible_email": null,
+      "responsible_name": null,
+      "count": 487,
+      "oldest_last_message_timestamp": "2023-04-23 11:57:11 +0300"
+    },
+    {
+      "responsible_email": "niaj@example.com",
+      "responsible_name": "Alice",
+      "count": 5,
+      "oldest_last_message_timestamp": "2023-05-26 05:29:38 +0300"
+    },
+    {
+      "responsible_email": "oscar@example.com",
+      "responsible_name": "Eve",
+      "count": 2,
+      "oldest_last_message_timestamp": "2023-06-14 13:38:45 +0300"
+    },
+    {
+      "responsible_email": "peggy@example.com",
+      "responsible_name": "Dan",
+      "count": 2,
+      "oldest_last_message_timestamp": "2026-04-13 21:07:11 +0300"
+    },
+    {
+      "responsible_email": "quentin@example.com",
+      "responsible_name": "Frank",
+      "count": 1,
+      "oldest_last_message_timestamp": "2026-05-15 21:57:01 +0300"
+    },
+    {
+      "responsible_email": "rupert@example.com",
+      "responsible_name": "Mallory",
+      "count": 1,
+      "oldest_last_message_timestamp": "2026-05-14 17:02:04 +0300"
+    },
+    {
+      "responsible_email": "sybil@example.com",
+      "responsible_name": "Ivan",
+      "count": 1,
+      "oldest_last_message_timestamp": "2026-05-13 18:50:13 +0300"
+    },
+    {
+      "responsible_email": "trent@example.com",
+      "responsible_name": null,
+      "count": 1,
+      "oldest_last_message_timestamp": "2026-05-12 03:00:38 +0300"
+    }
+  ],
+  "totals": {
+    "unread_open_chats": 500,
+    "reps_involved": 8,
+    "messaging_credits_used": 0,
+    "approx_api_calls": 11
+  }
+}

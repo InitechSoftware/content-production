@@ -1,0 +1,61 @@
+{
+  "tested_on": "2026-05-18T08:01:51+00:00",
+  "workspace": "Demo Workspace",
+  "total_probes": 7,
+  "by_http_status": {
+    "404": 3,
+    "(no error)": 2,
+    "400": 2
+  },
+  "modes": [
+    {
+      "slug": "send-to-nonexistent-chat",
+      "description": "POST /chats/{id}/messages with id=+155501000 (never assigned)",
+      "outcome": "errored_as_expected",
+      "http_status": 404,
+      "error_message": "Whatsapp chat_id \"+155501000\" not found"
+    },
+    {
+      "slug": "details-of-nonexistent-chat",
+      "description": "GET /chats/{id} with id=+155501000",
+      "outcome": "errored_as_expected",
+      "http_status": 404,
+      "error_message": "Whatsapp chat_id \"+155501000\" not found"
+    },
+    {
+      "slug": "assign-bogus-email",
+      "description": "PATCH /chats/{id} responsible_email=alice@example.com",
+      "outcome": "unexpected_success",
+      "http_status": null,
+      "error_message": null
+    },
+    {
+      "slug": "send-from-disconnected-account",
+      "description": "POST /messages with whatsapp_account_id of a disconnected account (disconnected status)",
+      "outcome": "errored_as_expected",
+      "http_status": 400,
+      "error_message": "Wrong phone number \"+155501004\""
+    },
+    {
+      "slug": "label-256-chars",
+      "description": "chat_set_label with 256-char label string",
+      "outcome": "unexpected_success",
+      "http_status": null,
+      "error_message": null
+    },
+    {
+      "slug": "send-to-malformed-phone",
+      "description": "POST /messages with phone='not-a-phone'",
+      "outcome": "errored_as_expected",
+      "http_status": 400,
+      "error_message": "Wrong phone number \"not-a-phone\""
+    },
+    {
+      "slug": "message-details-bogus-uid",
+      "description": "GET /messages/{uid} with uid=MSG-002",
+      "outcome": "errored_as_expected",
+      "http_status": 404,
+      "error_message": "Message uid \"MSG-002\" not found"
+    }
+  ]
+}

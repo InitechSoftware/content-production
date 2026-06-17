@@ -1,0 +1,25 @@
+{
+  "tool": "message_react",
+  "tested_on": "2026-05-18T07:48:33+00:00",
+  "args_used": {
+    "message_uid": "MSG-085",
+    "emoji": "thumbs-up"
+  },
+  "ok": false,
+  "note": "message_react has no public REST endpoint -- MCP-only tool. GET /messages/{uid}/reactions returns the current reactions object; setting/clearing reactions is gated to the MCP server's internal auth path.",
+  "rest_probe": {
+    "GET_/messages/{uid}/reactions": {
+      "ok": true,
+      "elapsed_seconds": 0.203,
+      "response": {
+        "status": "ok",
+        "data": {
+          "users": [],
+          "reactions": {},
+          "total": 0
+        }
+      }
+    },
+    "every_other_method_path_combination": "404 or 405"
+  }
+}

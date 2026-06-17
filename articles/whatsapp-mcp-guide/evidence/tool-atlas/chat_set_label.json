@@ -1,0 +1,37 @@
+{
+  "tool": "chat_set_label",
+  "tested_on": "2026-05-18T07:48:31+00:00",
+  "args_used": {
+    "chat_id": 27616435,
+    "label": "mcp-atlas-probe"
+  },
+  "ok": true,
+  "elapsed_seconds": 0.391,
+  "response": {
+    "status": "ok",
+    "data": {
+      "id": 27616435,
+      "name": "Person081",
+      "phone": "+155501074",
+      "jid": "155501074@s.whatsapp.net",
+      "is_group": false,
+      "closed": false,
+      "read": false,
+      "labels": [
+        "crm/enriched-v2",
+        "x"
+      ],
+      "chatgpt_autoresponse_enabled": false,
+      "responsible_email": "niaj@example.com",
+      "responsible_name": "Mallory",
+      "whatsapp_account_id": "155501006@s.whatsapp.net",
+      "chat_url": "/chat/+155501075/messages/",
+      "created_timestamp": "2024-11-11 17:17:55 +0200",
+      "last_message_uid": "MSG-035",
+      "last_message_timestamp": "2026-05-18 10:44:21 +0300",
+      "unattended": false,
+      "photo": "/static/img/default_avatar.0e8b3da1e44b.jpeg",
+      "is_allowed_to_message": true
+    }
+  }
+}

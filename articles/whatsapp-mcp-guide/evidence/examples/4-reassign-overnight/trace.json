@@ -1,0 +1,106 @@
+{
+  "scenario": "4-reassign-overnight",
+  "tested_on": "2026-05-18T07:58:33+00:00",
+  "target_teammate": {
+    "display_name": "Alice",
+    "email": "bob@example.com"
+  },
+  "cutoff_timestamp": "2026-05-15T19:00:00+00:00",
+  "tool_sequence": [
+    {
+      "tool": "workspace_team",
+      "teammates_returned": 15,
+      "target_resolved": true
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "closed": false,
+        "paginated": true
+      },
+      "pages_walked": 10,
+      "list_calls": 10
+    },
+    {
+      "tool": "(client-side filter)",
+      "criteria": "responsible_email is null AND last_message_timestamp >= 2026-05-15T19:00:00+00:00",
+      "matched": 0
+    },
+    {
+      "tool": "chat_assign (on TEST_CHAT_ID — proof of shape)",
+      "demo_chat_id": 27616435,
+      "demo_elapsed_seconds": 0.0
+    }
+  ],
+  "would_be_targets": [],
+  "demo_run_on_test_chat": {
+    "chat_id": 27616435,
+    "assign_resp": {
+      "elapsed_seconds": 0.0,
+      "response": {
+        "status": "ok",
+        "data": {
+          "id": 27616435,
+          "name": "Carol",
+          "phone": "+155501000",
+          "jid": "155501000@s.whatsapp.net",
+          "is_group": false,
+          "closed": false,
+          "read": false,
+          "labels": [
+            "crm/enriched-v2",
+            "x"
+          ],
+          "chatgpt_autoresponse_enabled": false,
+          "responsible_email": "dan@example.com",
+          "responsible_name": "Eve",
+          "whatsapp_account_id": "155501001@s.whatsapp.net",
+          "chat_url": "/chat/+155501002/messages/",
+          "created_timestamp": "2024-11-11 17:17:55 +0200",
+          "last_message_uid": "MSG-001",
+          "last_message_timestamp": "2026-05-18 10:48:38 +0300",
+          "unattended": false,
+          "photo": "/static/img/default_avatar.0e8b3da1e44b.jpeg",
+          "is_allowed_to_message": true
+        }
+      }
+    },
+    "unassign_resp": {
+      "elapsed_seconds": 0.0,
+      "response": {
+        "status": "ok",
+        "data": {
+          "id": 27616435,
+          "name": "Carol",
+          "phone": "+155501000",
+          "jid": "155501000@s.whatsapp.net",
+          "is_group": false,
+          "closed": false,
+          "read": false,
+          "labels": [
+            "crm/enriched-v2",
+            "x"
+          ],
+          "chatgpt_autoresponse_enabled": false,
+          "responsible_email": "dan@example.com",
+          "responsible_name": "Eve",
+          "whatsapp_account_id": "155501001@s.whatsapp.net",
+          "chat_url": "/chat/+155501002/messages/",
+          "created_timestamp": "2024-11-11 17:17:55 +0200",
+          "last_message_uid": "MSG-001",
+          "last_message_timestamp": "2026-05-18 10:48:38 +0300",
+          "unattended": false,
+          "photo": "/static/img/default_avatar.0e8b3da1e44b.jpeg",
+          "is_allowed_to_message": true
+        }
+      }
+    }
+  },
+  "totals": {
+    "candidates": 0,
+    "would_assign": 0,
+    "actually_reassigned_real_customer_chats": 0,
+    "messaging_credits_used": 0,
+    "approx_api_calls": 13
+  }
+}

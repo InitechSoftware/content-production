@@ -1,0 +1,20 @@
+{
+  "slug": "send-to-malformed-phone",
+  "description": "POST /messages with phone='not-a-phone'",
+  "outcome": "errored_as_expected",
+  "elapsed_seconds": 0.235,
+  "http_status": 400,
+  "error_body_parsed": {
+    "status": "error",
+    "message": "Wrong phone number \"not-a-phone\""
+  },
+  "error_body_raw_excerpt": "{\"status\": \"error\", \"message\": \"Wrong phone number \\\"not-a-phone\\\"\"}",
+  "args_used": {
+    "args": [
+      "155501002@s.whatsapp.net",
+      "not-a-phone",
+      "should fail: phone format"
+    ],
+    "kwargs": {}
+  }
+}

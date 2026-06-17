@@ -1,0 +1,310 @@
+{
+  "tested_on": "2026-05-18T08:04:17+00:00",
+  "workspace": "Demo Workspace",
+  "triage_shape": {
+    "list_pages_walked": 10,
+    "candidate_chats_deep_scanned": 20,
+    "total_api_calls": 31,
+    "wall_clock_seconds": 28.41
+  },
+  "quota_delta": {
+    "api_calls_used_before": 1218,
+    "api_calls_used_after": 1255,
+    "api_calls_delta": 37,
+    "messaging_used_before": 101,
+    "messaging_used_after": 101,
+    "messaging_delta": 0
+  },
+  "response_payload_size": {
+    "total_bytes_returned": 421365,
+    "estimated_tokens_for_responses": 105341,
+    "note": "Token count is API-response bytes / 4 (Anthropic's rough rule). Real Claude Code session also pays tokens for the user prompt, system prompt, tool definitions, and the AI's own reasoning text -- so total session tokens are typically 1.5-3x this number."
+  },
+  "calls": [
+    {
+      "tool": "workspace_team",
+      "elapsed_seconds": 0.234,
+      "response_bytes": 5462
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 1
+      },
+      "elapsed_seconds": 0.359,
+      "response_bytes": 31511
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 2
+      },
+      "elapsed_seconds": 0.438,
+      "response_bytes": 32054
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 3
+      },
+      "elapsed_seconds": 0.422,
+      "response_bytes": 33498
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 4
+      },
+      "elapsed_seconds": 0.797,
+      "response_bytes": 32582
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 5
+      },
+      "elapsed_seconds": 0.375,
+      "response_bytes": 31734
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 6
+      },
+      "elapsed_seconds": 0.421,
+      "response_bytes": 32725
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 7
+      },
+      "elapsed_seconds": 0.438,
+      "response_bytes": 31601
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 8
+      },
+      "elapsed_seconds": 0.484,
+      "response_bytes": 32033
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 9
+      },
+      "elapsed_seconds": 0.485,
+      "response_bytes": 32429
+    },
+    {
+      "tool": "list_chats",
+      "args": {
+        "read": false,
+        "closed": false,
+        "page": 10
+      },
+      "elapsed_seconds": 0.578,
+      "response_bytes": 32433
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.234,
+      "response_bytes": 723
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.485,
+      "response_bytes": 34827
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.234,
+      "response_bytes": 1967
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.219,
+      "response_bytes": 1309
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.234,
+      "response_bytes": 695
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.203,
+      "response_bytes": 709
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 3.844,
+      "response_bytes": 34162
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.187,
+      "response_bytes": 704
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.235,
+      "response_bytes": 704
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.234,
+      "response_bytes": 694
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.235,
+      "response_bytes": 699
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.265,
+      "response_bytes": 2590
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.281,
+      "response_bytes": 5133
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.188,
+      "response_bytes": 702
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.218,
+      "response_bytes": 2295
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.203,
+      "response_bytes": 700
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.204,
+      "response_bytes": 707
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.203,
+      "response_bytes": 1967
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.218,
+      "response_bytes": 701
+    },
+    {
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<each>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.235,
+      "response_bytes": 1315
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "tool": "whatsapp_account_send_message",
+  "tested_on": "2026-05-18T07:48:35+00:00",
+  "args_used": {
+    "whatsapp_account_id": "155501006@s.whatsapp.net",
+    "phone": "+155501006",
+    "text": "[mcp-test] cold-send probe via whatsapp_account_send_message"
+  },
+  "ok": true,
+  "elapsed_seconds": 0.235,
+  "response": {
+    "status": "ok",
+    "data": {
+      "message_uid": "MSG-087"
+    }
+  }
+}

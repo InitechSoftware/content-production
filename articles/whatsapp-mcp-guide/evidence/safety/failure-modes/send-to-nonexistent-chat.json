@@ -1,0 +1,19 @@
+{
+  "slug": "send-to-nonexistent-chat",
+  "description": "POST /chats/{id}/messages with id=+155501000 (never assigned)",
+  "outcome": "errored_as_expected",
+  "elapsed_seconds": 0.297,
+  "http_status": 404,
+  "error_body_parsed": {
+    "status": "error",
+    "message": "Whatsapp chat_id \"+155501000\" not found"
+  },
+  "error_body_raw_excerpt": "{\"status\": \"error\", \"message\": \"Whatsapp chat_id \\\"+155501000\\\" not found\"}",
+  "args_used": {
+    "args": [
+      99999999,
+      "this should fail"
+    ],
+    "kwargs": {}
+  }
+}

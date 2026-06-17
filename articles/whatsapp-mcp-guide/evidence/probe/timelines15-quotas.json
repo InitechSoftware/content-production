@@ -1,0 +1,25 @@
+{
+  "elapsed_seconds": 0.234,
+  "status": "ok",
+  "data": {
+    "seats": {
+      "total": 2,
+      "used": 2
+    },
+    "messaging_quota": {
+      "total": 50,
+      "used": 41,
+      "period_start": "2026-05-12 00:00:00 +0000",
+      "period_end": "2026-06-12 00:00:00 +0000"
+    },
+    "api_calls_quota": {
+      "total": 200000,
+      "used": 756,
+      "period_start": "2026-05-12 00:00:00 +0000",
+      "period_end": "2026-06-12 00:00:00 +0000"
+    },
+    "non_recurring_quota": {
+      "remaining_balance": 0
+    }
+  }
+}

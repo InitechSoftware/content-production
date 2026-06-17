@@ -1,0 +1,17 @@
+{
+  "tool": "message_reply",
+  "tested_on": "2026-05-18T07:48:35+00:00",
+  "args_used": {
+    "message_uid": "MSG-085",
+    "text": "[mcp-test] reply via message_reply -- 2026-05-18T07:48:35+00:00",
+    "chat_id": 27616435
+  },
+  "ok": true,
+  "elapsed_seconds": 0.203,
+  "response": {
+    "status": "ok",
+    "data": {
+      "message_uid": "MSG-086"
+    }
+  }
+}

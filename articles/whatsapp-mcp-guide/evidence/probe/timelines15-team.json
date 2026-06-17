@@ -1,0 +1,59 @@
+{
+  "elapsed_seconds": 0.218,
+  "status": "ok",
+  "data": {
+    "teams": [
+      {
+        "title": "Default"
+      },
+      {
+        "title": "Team 1"
+      }
+    ],
+    "teammates": [
+      {
+        "user_id": 17278,
+        "display_name": "Alice",
+        "email": "bob@example.com",
+        "role": "Owner",
+        "team": "Default",
+        "status": "Active",
+        "invitation_status": null,
+        "created_at": "2022-08-25 07:46:48 +0000",
+        "whatsapp_accounts": [
+          {
+            "id": "155501000@s.whatsapp.net",
+            "phone": "+155501000",
+            "connected_on": "2026-05-06 13:55:53 +0000",
+            "status": "active",
+            "owner_name": "Alice",
+            "owner_email": "bob@example.com",
+            "account_name": "Carol"
+          }
+        ]
+      },
+      {
+        "user_id": 119068,
+        "display_name": "Dan",
+        "email": "eve@example.com",
+        "role": "Admin",
+        "team": "Default",
+        "status": "Invited",
+        "invitation_status": "Expired",
+        "created_at": "2023-04-29 11:47:03 +0000",
+        "whatsapp_accounts": []
+      },
+      {
+        "user_id": 123656,
+        "display_name": "Frank",
+        "email": "grace@example.com",
+        "role": "Teammate",
+        "team": "Default",
+        "status": "Active",
+        "invitation_status": null,
+        "created_at": "2023-05-04 11:32:44 +0000",
+        "whatsapp_accounts": []
+      }
+    ]
+  }
+}

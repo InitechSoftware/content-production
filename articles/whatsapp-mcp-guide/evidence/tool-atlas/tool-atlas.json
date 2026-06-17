@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-05-18T07:48:36+00:00",
+  "workspace": "Demo Workspace",
+  "tool_count": 18,
+  "tools": [
+    {
+      "name": "workspace_quotas",
+      "rest_endpoint": "GET /workspace/quotas",
+      "ok": true,
+      "elapsed_seconds": 0.281,
+      "response_keys": [
+        "api_calls_quota",
+        "messaging_quota",
+        "non_recurring_quota",
+        "seats"
+      ],
+      "evidence_file": "evidence/tool-atlas/workspace_quotas.json",
+      "error": null
+    },
+    {
+      "name": "workspace_whatsapp_accounts",
+      "rest_endpoint": "GET /whatsapp_accounts",
+      "ok": true,
+      "elapsed_seconds": 0.187,
+      "response_keys": [
+        "whatsapp_accounts"
+      ],
+      "evidence_file": "evidence/tool-atlas/workspace_whatsapp_accounts.json",
+      "error": null
+    },
+    {
+      "name": "workspace_team",
+      "rest_endpoint": "GET /workspace/teammates",
+      "ok": true,
+      "elapsed_seconds": 0.234,
+      "response_keys": [
+        "teammates",
+        "teams"
+      ],
+      "evidence_file": "evidence/tool-atlas/workspace_team.json",
+      "error": null
+    },
+    {
+      "name": "list_chats",
+      "rest_endpoint": "GET /chats",
+      "ok": true,
+      "elapsed_seconds": 0.391,
+      "response_keys": [
+        "chats",
+        "has_more_pages"
+      ],
+      "evidence_file": "evidence/tool-atlas/list_chats.json",
+      "error": null
+    },
+    {
+      "name": "chat_details",
+      "rest_endpoint": "GET /chats/{chat_id}",
+      "ok": true,
+      "elapsed_seconds": 0.234,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_details.json",
+      "error": null
+    },
+    {
+      "name": "get_chat_messages",
+      "rest_endpoint": "GET /chats/{chat_id}/messages",
+      "ok": true,
+      "elapsed_seconds": 0.531,
+      "response_keys": [
+        "has_more_pages",
+        "messages"
+      ],
+      "evidence_file": "evidence/tool-atlas/get_chat_messages.json",
+      "error": null
+    },
+    {
+      "name": "chat_history",
+      "rest_endpoint": "(MCP-only; synthesized from get_chat_messages)",
+      "ok": true,
+      "elapsed_seconds": 0.954,
+      "response_keys": [
+        "has_more_pages",
+        "messages"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_history.json",
+      "error": null
+    },
+    {
+      "name": "message_details",
+      "rest_endpoint": "GET /messages/{message_uid}",
+      "ok": true,
+      "elapsed_seconds": 0.203,
+      "response_keys": [
+        "attachment_filename",
+        "attachment_url",
+        "chat_id",
+        "created_by",
+        "data",
+        "from_me",
+        "has_attachment",
+        "message_type",
+        "origin",
+        "reactions",
+        "recipient_name",
+        "recipient_phone",
+        "sender_name",
+        "sender_phone",
+        "status",
+        "text",
+        "timestamp",
+        "uid"
+      ],
+      "evidence_file": "evidence/tool-atlas/message_details.json",
+      "error": null
+    },
+    {
+      "name": "chat_set_label",
+      "rest_endpoint": "PATCH /chats/{chat_id} body={labels:[...]} (REPLACE semantics)",
+      "ok": true,
+      "elapsed_seconds": 0.391,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_set_label.json",
+      "error": null
+    },
+    {
+      "name": "chat_remove_label",
+      "rest_endpoint": "PATCH /chats/{chat_id} body={labels:[...]} (REPLACE, filter out)",
+      "ok": true,
+      "elapsed_seconds": 0.375,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_remove_label.json",
+      "error": null
+    },
+    {
+      "name": "chat_assign",
+      "rest_endpoint": "PATCH /chats/{chat_id} body={responsible_email:...}",
+      "ok": true,
+      "elapsed_seconds": 0.187,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_assign.json",
+      "error": null
+    },
+    {
+      "name": "chat_unassign",
+      "rest_endpoint": "PATCH /chats/{chat_id} body={responsible_email:null}",
+      "ok": true,
+      "elapsed_seconds": 0.204,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_unassign.json",
+      "error": null
+    },
+    {
+      "name": "chat_close",
+      "rest_endpoint": "PATCH /chats/{chat_id} body={closed:true}",
+      "ok": true,
+      "elapsed_seconds": 0.203,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_close.json",
+      "error": null
+    },
+    {
+      "name": "chat_open",
+      "rest_endpoint": "PATCH /chats/{chat_id} body={closed:false}",
+      "ok": true,
+      "elapsed_seconds": 0.203,
+      "response_keys": [
+        "chat_url",
+        "chatgpt_autoresponse_enabled",
+        "closed",
+        "created_timestamp",
+        "id",
+        "is_allowed_to_message",
+        "is_group",
+        "jid",
+        "labels",
+        "last_message_timestamp",
+        "last_message_uid",
+        "name",
+        "phone",
+        "photo",
+        "read",
+        "responsible_email",
+        "responsible_name",
+        "unattended",
+        "whatsapp_account_id"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_open.json",
+      "error": null
+    },
+    {
+      "name": "chat_send_message",
+      "rest_endpoint": "POST /chats/{chat_id}/messages",
+      "ok": true,
+      "elapsed_seconds": 0.219,
+      "response_keys": [
+        "message_uid"
+      ],
+      "evidence_file": "evidence/tool-atlas/chat_send_message.json",
+      "error": null
+    },
+    {
+      "name": "message_react",
+      "rest_endpoint": "(MCP-only; no public REST -- GET /messages/{uid}/reactions is read-only)",
+      "ok": false,
+      "elapsed_seconds": null,
+      "response_keys": null,
+      "evidence_file": "evidence/tool-atlas/message_react.json",
+      "error": null
+    },
+    {
+      "name": "message_reply",
+      "rest_endpoint": "POST /chats/{chat_id}/messages body={text, reply_to_uid}",
+      "ok": true,
+      "elapsed_seconds": 0.203,
+      "response_keys": [
+        "message_uid"
+      ],
+      "evidence_file": "evidence/tool-atlas/message_reply.json",
+      "error": null
+    },
+    {
+      "name": "whatsapp_account_send_message",
+      "rest_endpoint": "POST /messages",
+      "ok": true,
+      "elapsed_seconds": 0.235,
+      "response_keys": [
+        "message_uid"
+      ],
+      "evidence_file": "evidence/tool-atlas/whatsapp_account_send_message.json",
+      "error": null
+    }
+  ]
+}

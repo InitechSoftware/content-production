@@ -1,0 +1,65 @@
+{
+  "tested_on": "2026-05-18T08:04:17+00:00",
+  "workspace": "Demo Workspace",
+  "steps": [
+    {
+      "step": 1,
+      "prompt_intent": "What's the state of my workspace?",
+      "tool": "workspace_whatsapp_accounts",
+      "elapsed_seconds": 0.172,
+      "response_bytes": 1717
+    },
+    {
+      "step": 1,
+      "prompt_intent": "What's the state of my workspace?",
+      "tool": "workspace_team",
+      "elapsed_seconds": 0.203,
+      "response_bytes": 5462
+    },
+    {
+      "step": 2,
+      "prompt_intent": "List the 10 most recent chats.",
+      "tool": "list_chats",
+      "args": {
+        "page": 1
+      },
+      "elapsed_seconds": 0.422,
+      "response_bytes": 31052
+    },
+    {
+      "step": 3,
+      "prompt_intent": "Summarize the conversation in this chat.",
+      "tool": "chat_details",
+      "args": {
+        "chat_id": "<sample>"
+      },
+      "elapsed_seconds": 0.187,
+      "response_bytes": 588
+    },
+    {
+      "step": 3,
+      "prompt_intent": "Summarize the conversation in this chat.",
+      "tool": "get_chat_messages",
+      "args": {
+        "chat_id": "<sample>",
+        "page": 1
+      },
+      "elapsed_seconds": 0.188,
+      "response_bytes": 67
+    },
+    {
+      "step": 4,
+      "prompt_intent": "Add label 'reviewed' to chat <ID>. (idempotent, reversible, visible in UI)",
+      "tool": "chat_set_label",
+      "executed": false,
+      "note": "Documented but not run here -- this script is read-only so it can re-run without quota cost. The chat_set_label evidence lives in evidence/tool-atlas/chat_set_label.json."
+    },
+    {
+      "step": 5,
+      "prompt_intent": "Draft a reply to chat <ID> based on the conversation. Show me before sending. Don't send.",
+      "tool": "(client-side compose; no API call)",
+      "executed": false,
+      "note": "Draft-first pattern: the AI composes the message text, shows it to the user, and only calls chat_send_message after explicit approval. The draft-first evidence lives in evidence/examples/2-stalled-deals-followup/output.md."
+    }
+  ]
+}

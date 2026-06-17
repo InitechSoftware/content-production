@@ -1,0 +1,17 @@
+{
+  "elapsed_seconds": 0.188,
+  "status": "ok",
+  "data": {
+    "whatsapp_accounts": [
+      {
+        "id": "155501000@s.whatsapp.net",
+        "phone": "+155501000",
+        "connected_on": "2026-05-06 13:55:53 +0000",
+        "status": "active",
+        "owner_name": "Alice",
+        "owner_email": "bob@example.com",
+        "account_name": "Carol"
+      }
+    ]
+  }
+}

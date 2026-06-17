@@ -1,0 +1,92 @@
+{
+  "scenario": "2-stalled-deals-followup",
+  "tested_on": "2026-05-18T07:58:01+00:00",
+  "label_used": "sales-qualified",
+  "stale_threshold_days": 5,
+  "tool_sequence": [
+    {
+      "tool": "list_chats",
+      "args": {
+        "labels": [
+          "sales-qualified"
+        ],
+        "closed": false,
+        "paginated": true
+      },
+      "pages_walked": 5,
+      "matched_count": 250
+    },
+    {
+      "tool": "(client-side filter)",
+      "criteria": "stale > 5 days",
+      "stale_count": 203
+    },
+    {
+      "tool": "get_chat_messages",
+      "called_for_n_chats": 5
+    },
+    {
+      "tool": "(AI composes draft per chat)",
+      "drafts_produced": 5
+    }
+  ],
+  "examples": [
+    {
+      "chat_id": 8798581,
+      "chat_name": "+155501000",
+      "responsible_email": null,
+      "last_message_timestamp": "2023-05-20 21:09:56 +0300",
+      "days_stale": 1093,
+      "last_customer_message_excerpt": "Hi! I'm Testing my Pipedrive connection",
+      "draft_text": "Hi +155501000, circling back on your last note (\"Hi! I'm Testing my Pipedrive connection…\"). Still happy to help — want to pick a time this week? I have 10 min Tue/Thu PM.",
+      "get_chat_messages_elapsed_seconds": 0.25
+    },
+    {
+      "chat_id": 3860590,
+      "chat_name": "🥰",
+      "responsible_email": "alice@example.com",
+      "last_message_timestamp": "2022-10-10 05:35:16 +0300",
+      "days_stale": 1316,
+      "last_customer_message_excerpt": "I don't know how it works",
+      "draft_text": "Hi 🥰, circling back on your last note (\"I don't know how it works…\"). Still happy to help — want to pick a time this week? I have 10 min Tue/Thu PM.",
+      "get_chat_messages_elapsed_seconds": 0.234
+    },
+    {
+      "chat_id": 5417552,
+      "chat_name": "*",
+      "responsible_email": null,
+      "last_message_timestamp": "2023-01-18 22:25:10 +0200",
+      "days_stale": 1215,
+      "last_customer_message_excerpt": "Hi! I'm Testing my Pipedrive connection",
+      "draft_text": "Hi *, circling back on your last note (\"Hi! I'm Testing my Pipedrive connection…\"). Still happy to help — want to pick a time this week? I have 10 min Tue/Thu PM.",
+      "get_chat_messages_elapsed_seconds": 0.297
+    },
+    {
+      "chat_id": 2305219,
+      "chat_name": "-",
+      "responsible_email": "alice@example.com",
+      "last_message_timestamp": "2022-07-06 20:50:28 +0300",
+      "days_stale": 1411,
+      "last_customer_message_excerpt": "Hello, thank you for contacting Northwind Legal. Can I learn your name, country and e-mail?",
+      "draft_text": "Hi -, circling back on your last note (\"Hello, thank you for contacting Northwind Legal. Can I learn your …\"). Still happy to help — want to pick a time this week? I have 10 min Tue/Thu PM.",
+      "get_chat_messages_elapsed_seconds": 0.234
+    },
+    {
+      "chat_id": 9365446,
+      "chat_name": ".",
+      "responsible_email": null,
+      "last_message_timestamp": "2023-06-05 22:11:14 +0300",
+      "days_stale": 1077,
+      "last_customer_message_excerpt": "Hi! I'm Testing my Hubspot connection",
+      "draft_text": "Hi ., circling back on your last note (\"Hi! I'm Testing my Hubspot connection…\"). Still happy to help — want to pick a time this week? I have 10 min Tue/Thu PM.",
+      "get_chat_messages_elapsed_seconds": 0.219
+    }
+  ],
+  "totals": {
+    "chats_with_label": 250,
+    "stale": 203,
+    "drafts_produced": 5,
+    "messaging_credits_used": 0,
+    "approx_api_calls": 10
+  }
+}

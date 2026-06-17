@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.local
+*.env
+
+# Raw evidence — may contain PII, never committed.
+# Only the scrubbed counterparts (.json, .md) are committed.
+**/evidence/**/*.raw.json
+**/evidence/**/*.raw.md
+**/evidence/**/private/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporary
+*.tmp
+*.bak

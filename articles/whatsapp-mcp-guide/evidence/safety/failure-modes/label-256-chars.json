@@ -1,0 +1,40 @@
+{
+  "slug": "label-256-chars",
+  "description": "chat_set_label with 256-char label string",
+  "outcome": "unexpected_success",
+  "elapsed_seconds": 0.609,
+  "response": {
+    "status": "ok",
+    "data": {
+      "id": 27616435,
+      "name": "Bob",
+      "phone": "+155501001",
+      "jid": "155501001@s.whatsapp.net",
+      "is_group": false,
+      "closed": false,
+      "read": false,
+      "labels": [
+        "crm/enriched-v2",
+        "x"
+      ],
+      "chatgpt_autoresponse_enabled": false,
+      "responsible_email": "carol@example.com",
+      "responsible_name": "Dan",
+      "whatsapp_account_id": "155501002@s.whatsapp.net",
+      "chat_url": "/chat/+155501003/messages/",
+      "created_timestamp": "2024-11-11 17:17:55 +0200",
+      "last_message_uid": "MSG-001",
+      "last_message_timestamp": "2026-05-18 10:48:38 +0300",
+      "unattended": false,
+      "photo": "/static/img/default_avatar.0e8b3da1e44b.jpeg",
+      "is_allowed_to_message": true
+    }
+  },
+  "args_used": {
+    "args": [
+      27616435,
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "kwargs": {}
+  }
+}

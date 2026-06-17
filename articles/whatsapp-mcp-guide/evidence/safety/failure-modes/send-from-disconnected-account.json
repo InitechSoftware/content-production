@@ -1,0 +1,20 @@
+{
+  "slug": "send-from-disconnected-account",
+  "description": "POST /messages with whatsapp_account_id of a disconnected account (disconnected status)",
+  "outcome": "errored_as_expected",
+  "elapsed_seconds": 0.219,
+  "http_status": 400,
+  "error_body_parsed": {
+    "status": "error",
+    "message": "Wrong phone number \"+155501004\""
+  },
+  "error_body_raw_excerpt": "{\"status\": \"error\", \"message\": \"Wrong phone number \\\"+155501004\\\"\"}",
+  "args_used": {
+    "args": [
+      "155501005@s.whatsapp.net",
+      "+155501004",
+      "should fail: account disconnected"
+    ],
+    "kwargs": {}
+  }
+}

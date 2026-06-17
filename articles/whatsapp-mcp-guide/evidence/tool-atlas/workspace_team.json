@@ -1,0 +1,262 @@
+{
+  "tool": "workspace_team",
+  "tested_on": "2026-05-18T07:48:29+00:00",
+  "args_used": {},
+  "ok": true,
+  "elapsed_seconds": 0.234,
+  "response": {
+    "status": "ok",
+    "data": {
+      "teams": [
+        {
+          "title": "Default"
+        },
+        {
+          "title": "Operations Team"
+        },
+        {
+          "title": "Sales Team"
+        },
+        {
+          "title": "Support Team"
+        }
+      ],
+      "teammates": [
+        {
+          "user_id": 2,
+          "display_name": "Peggy",
+          "email": "quentin@example.com",
+          "role": "Owner",
+          "team": "Support Team",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2018-07-24 17:31:42 +0300",
+          "whatsapp_accounts": [
+            {
+              "id": "155501006@s.whatsapp.net",
+              "phone": "+155501006",
+              "connected_on": "2026-03-07 13:52:36 +0200",
+              "status": "active",
+              "owner_name": "Peggy",
+              "owner_email": "quentin@example.com",
+              "account_name": "Rupert"
+            }
+          ]
+        },
+        {
+          "user_id": 4,
+          "display_name": "Sybil",
+          "email": "trent@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2018-07-24 18:16:13 +0300",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 9519,
+          "display_name": "Ursula",
+          "email": "victor@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2021-11-23 08:50:48 +0200",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 13938,
+          "display_name": "Alice",
+          "email": "bob@example.com",
+          "role": "Admin",
+          "team": "Support Team",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2022-05-17 15:49:32 +0300",
+          "whatsapp_accounts": [
+            {
+              "id": "155501000@s.whatsapp.net",
+              "phone": "+155501000",
+              "connected_on": "2026-04-13 18:43:02 +0300",
+              "status": "disconnected",
+              "owner_name": "Alice",
+              "owner_email": "bob@example.com",
+              "account_name": "Carol"
+            }
+          ]
+        },
+        {
+          "user_id": 17278,
+          "display_name": "Mallory",
+          "email": "niaj@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2022-08-25 10:46:48 +0300",
+          "whatsapp_accounts": [
+            {
+              "id": "155501005@s.whatsapp.net",
+              "phone": "+155501005",
+              "connected_on": "2025-07-16 08:59:19 +0300",
+              "status": "disconnected",
+              "owner_name": "Mallory",
+              "owner_email": "niaj@example.com",
+              "account_name": "Oscar"
+            }
+          ]
+        },
+        {
+          "user_id": 177445,
+          "display_name": "Grace",
+          "email": "heidi@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2023-07-12 14:38:19 +0300",
+          "whatsapp_accounts": [
+            {
+              "id": "155501002@s.whatsapp.net",
+              "phone": "+155501002",
+              "connected_on": "2025-11-03 11:38:59 +0200",
+              "status": "disconnected",
+              "owner_name": "Grace",
+              "owner_email": "heidi@example.com",
+              "account_name": "Ivan"
+            }
+          ]
+        },
+        {
+          "user_id": 415640,
+          "display_name": "Wendy",
+          "email": "xander@example.com",
+          "role": "Team supervisor",
+          "team": "Support Team",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2024-03-24 11:50:05 +0200",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 480052,
+          "display_name": "Yvonne",
+          "email": "zara@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2024-08-27 11:24:49 +0300",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 481748,
+          "display_name": "Dan",
+          "email": "eve@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2024-09-04 15:10:32 +0300",
+          "whatsapp_accounts": [
+            {
+              "id": "155501001@s.whatsapp.net",
+              "phone": "+155501001",
+              "connected_on": "2025-11-28 12:05:51 +0200",
+              "status": "disconnected",
+              "owner_name": "Dan",
+              "owner_email": "eve@example.com",
+              "account_name": "Frank"
+            }
+          ]
+        },
+        {
+          "user_id": 585066,
+          "display_name": "Person027",
+          "email": "person028@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2025-04-15 12:04:40 +0300",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 588965,
+          "display_name": "Person029",
+          "email": "person030@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2025-05-12 12:11:26 +0300",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 603508,
+          "display_name": "Person031",
+          "email": "person032@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2025-07-16 08:57:29 +0300",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 622522,
+          "display_name": "Person029",
+          "email": "person033@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2025-10-17 09:09:22 +0300",
+          "whatsapp_accounts": []
+        },
+        {
+          "user_id": 630497,
+          "display_name": "Judy",
+          "email": "karl@example.com",
+          "role": "Admin",
+          "team": "Default",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2025-11-30 18:48:40 +0200",
+          "whatsapp_accounts": [
+            {
+              "id": "155501003@s.whatsapp.net",
+              "phone": "+155501003",
+              "connected_on": "2026-05-14 13:40:16 +0300",
+              "status": "disconnected",
+              "owner_name": "Judy",
+              "owner_email": "karl@example.com",
+              "account_name": "Linda"
+            },
+            {
+              "id": "155501004@s.whatsapp.net",
+              "phone": "+155501004",
+              "connected_on": "2026-03-17 09:39:37 +0200",
+              "status": "disconnected",
+              "owner_name": "Judy",
+              "owner_email": "karl@example.com",
+              "account_name": "Judy"
+            }
+          ]
+        },
+        {
+          "user_id": 642553,
+          "display_name": "Dan",
+          "email": "person034@example.com",
+          "role": "Admin",
+          "team": "Support Team",
+          "status": "Active",
+          "invitation_status": null,
+          "created_at": "2026-02-04 11:55:54 +0200",
+          "whatsapp_accounts": []
+        }
+      ]
+    }
+  }
+}

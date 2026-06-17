@@ -1,0 +1,18 @@
+{
+  "slug": "message-details-bogus-uid",
+  "description": "GET /messages/{uid} with uid=MSG-002",
+  "outcome": "errored_as_expected",
+  "elapsed_seconds": 0.203,
+  "http_status": 404,
+  "error_body_parsed": {
+    "status": "error",
+    "message": "Message uid \"MSG-002\" not found"
+  },
+  "error_body_raw_excerpt": "{\"status\": \"error\", \"message\": \"Message uid \\\"MSG-002\\\" not found\"}",
+  "args_used": {
+    "args": [
+      "MSG-002"
+    ],
+    "kwargs": {}
+  }
+}

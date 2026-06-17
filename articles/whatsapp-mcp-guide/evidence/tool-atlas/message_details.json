@@ -1,0 +1,38 @@
+{
+  "tool": "message_details",
+  "tested_on": "2026-05-18T07:48:31+00:00",
+  "args_used": {
+    "message_uid": "MSG-035"
+  },
+  "ok": true,
+  "elapsed_seconds": 0.203,
+  "response": {
+    "status": "ok",
+    "data": {
+      "uid": "MSG-035",
+      "chat_id": 27616435,
+      "timestamp": "2026-05-18 10:44:21 +0300",
+      "sender_phone": "+155501006",
+      "sender_name": "TimelinesAI Support",
+      "recipient_phone": "+155501074",
+      "recipient_name": "Victor",
+      "from_me": true,
+      "text": "[mcp-test] Tool Atlas probe -- 2026-05-18T07:44:21+00:00 -- auto-message from content-production harness.",
+      "attachment_url": null,
+      "attachment_filename": null,
+      "status": "Delivered",
+      "origin": "Public API",
+      "has_attachment": false,
+      "message_type": "whatsapp",
+      "reactions": {
+        "users": [],
+        "reactions": {},
+        "total": 0
+      },
+      "data": {
+        "whatsapp_from_me": true
+      },
+      "created_by": "Quentin Lee (quentin@example.com)"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "chat_send_message",
+  "tested_on": "2026-05-18T07:48:33+00:00",
+  "args_used": {
+    "chat_id": 27616435,
+    "text": "[mcp-test] Tool Atlas probe -- 2026-05-18T07:48:33+00:00 -- auto-message from content-production harness."
+  },
+  "ok": true,
+  "elapsed_seconds": 0.219,
+  "response": {
+    "status": "ok",
+    "data": {
+      "message_uid": "MSG-085"
+    }
+  }
+}
