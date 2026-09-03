@@ -4,7 +4,9 @@ slug: "gohighlevel-whatsapp-for-agencies"
 meta_title: "GoHighLevel WhatsApp for Agencies and Sub-Accounts"
 meta_description: "Plan WhatsApp across HighLevel sub-accounts: installation scope, sender numbers, workflows, contact notes, permissions, and a safe agency rollout."
 primary_keyword: "GoHighLevel WhatsApp for agencies"
-status: "draft"
+status: "published"
+published_url: "https://timelines.ai/gohighlevel-whatsapp-for-agencies"
+sanity_document_id: "post-mrkt-5172-gohighlevel-whatsapp-for-agencies"
 linear_issue: "MRKT-5172"
 ---
 
