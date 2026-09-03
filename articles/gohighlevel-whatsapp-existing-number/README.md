@@ -3,7 +3,11 @@
 Linear: MRKT-5192
 Planned slug: `gohighlevel-whatsapp-existing-number`
 
-This folder contains the repository-backed article source, claim evidence, original visual, and validator.
+This folder contains the published repository-backed article source, claim evidence, original visual, and validator.
+
+Published URL: https://timelines.ai/gohighlevel-whatsapp-existing-number
+Sanity document: `post-mrkt-5192-gohighlevel-whatsapp-existing-number`
+Published: 2026-09-03
 
 ## Evidence boundaries
 
