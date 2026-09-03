@@ -10,9 +10,9 @@ linear_issue: "MRKT-5172"
 
 # GoHighLevel WhatsApp for agencies: sub-accounts, numbers, and rollout
 
-Agencies should treat each HighLevel sub-account as a separate WhatsApp deployment boundary. TimelinesAI's public HighLevel listing identifies the app as a sub-account app, although both agency users and sub-account users can install it. That distinction matters: an agency user may have permission to install the app, but the app still runs in a selected client location.
+Agencies should treat each HighLevel sub-account as a separate WhatsApp deployment boundary. TimelinesAI's public HighLevel listing identifies the app as a sub-account app, although both agency users and sub-account users can install it. That distinction matters: an agency user may have permission to install the app, but the current connector still binds one selected client location at a time.
 
-The safe rollout model is simple. Pick one client sub-account, connect it with OAuth, verify which WhatsApp sender numbers are available in the workflow action, test contact creation and notes, then repeat the process for other locations. Do not assume that one installation covers every sub-account unless your current app configuration explicitly proves it.
+The safe rollout model is simple. Pick one client sub-account, connect it with OAuth, verify which WhatsApp sender numbers are available in the workflow action, test contact creation and notes, then repeat the process for other locations. Do not select the agency row for a multi-location rollout: the current connector stops and asks the installer to choose a specific sub-account when an agency has more than one location.
 
 ## Quick answers
 
@@ -24,7 +24,7 @@ The safe rollout model is simple. Pick one client sub-account, connect it with O
 | Can a workflow choose a WhatsApp sender? | The public listing says the action includes a sender-number selector. Test the available choices in each client sub-account. |
 | Do WhatsApp replies appear in HighLevel? | Inbound messages are written to the matching contact as timestamped notes with a source-conversation link. |
 | What if the sender is not already a contact? | The listing says the integration creates a new HighLevel contact. |
-| Does one install cover every client location? | The public listing does not make that claim. Plan a separate installation and acceptance test for each target sub-account. |
+| Does one install cover every client location? | No in the current connector. Install and test each target sub-account separately. |
 
 ## The agency architecture
 
@@ -44,7 +44,7 @@ flowchart LR
   S --> M[Outbound message mirrored as contact note]
 ```
 
-This model avoids two common mistakes. First, agency permission does not automatically mean agency-wide deployment. Second, a sender number visible in one location should not be assumed to be available in another.
+This model avoids two common mistakes. First, agency permission does not mean the connector supports agency-wide deployment. The marketplace configuration currently exposes a bulk-install capability, but the connector accepts only one selected location and errors on a multi-location agency token. Second, a sender number visible in one location should not be assumed to be available in another.
 
 Before rollout, document four objects for every client:
 
@@ -177,23 +177,23 @@ Pause the rollout when:
 
 For commercial planning, compare [GoHighLevel WhatsApp integration pricing](https://timelines.ai/gohighlevel-whatsapp-pricing) with the number of client locations, senders, and operators you expect to support.
 
-## Questions to ask before scaling past the pilot
+## Questions to answer before scaling past the pilot
 
-The agency should get direct confirmation for these points in its own environment:
+The current supported model is one selected HighLevel sub-account per connection. The agency should still verify these operational points in its own environment:
 
-1. Does every sub-account need a separate OAuth installation?
-2. Can one TimelinesAI workspace connect to several HighLevel sub-accounts?
-3. Which connected WhatsApp numbers appear in each sub-account's workflow action?
-4. Does uninstalling the app from one sub-account affect another?
-5. Are contact creation and notes always isolated to the installing location?
+1. Which connected WhatsApp numbers appear in each sub-account's workflow action?
+2. Does uninstalling the app from one sub-account affect another?
+3. Are contact creation and notes always isolated to the installing location?
+4. Does cloning a workflow retain a sender from the source location?
+5. Who owns reconnects and failed sends for each client?
 
-The first-party marketplace page does not answer those questions. Treat them as rollout tests until the product team or a working account confirms the current behavior.
+Treat those points as rollout tests until a working account confirms the current behavior.
 
 ## FAQ
 
 ### Is TimelinesAI's HighLevel app agency-wide?
 
-The marketplace identifies it as a sub-account app. Agency users can install it, but the safe assumption is that they install it into a selected client sub-account.
+The marketplace identifies it as a sub-account app. Agency users can install it, but the current connector supports one selected client sub-account at a time. For an agency with several locations, select and install each target sub-account separately.
 
 ### Can an agency use different WhatsApp numbers for different clients?
 

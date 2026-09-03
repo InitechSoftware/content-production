@@ -20,12 +20,33 @@ Source: https://marketplace.gohighlevel.com/integration/69f9c25eab147118be566acd
 - Unknown inbound numbers create new contacts.
 - Workflow-sent outbound messages are mirrored to contact notes.
 
+## Anonymous marketplace metadata
+
+The listing's public `installationDetails` response reports:
+
+- `userTypes: ["Location"]`;
+- `isAgencyBulkInstallEnabled: true`;
+- 20 total installations, all 20 recorded as location installations and zero as company installations.
+
+The enabled bulk-install flag conflicts with the shipped connector. It is not evidence that multi-location agency deployment works.
+
+## Implementation evidence
+
+Application revision audited: `1594dcac5188ca0f25f6c417f7ae9d17c7a4e694` in `InitechSoftware/tl-gohighlevel-integration`.
+
+- `src/integration.ts:15-33` defines Location-scoped OAuth and describes the Company-token recovery path.
+- `src/integration.ts:90-130` lists company locations, auto-selects only when exactly one location exists, and throws when more than one sub-account exists.
+- `test/oauth.test.ts:90-140` verifies the single-location fallback and the multi-location error.
+- The repository's `CLAUDE.md` describes one TimelinesAI workspace connected to one GHL location.
+
+Operational conclusion: the supported path is a separate, explicitly selected sub-account installation. The publisher should disable the marketplace bulk-install flag or engineering must implement and live-test true multi-location provisioning before it is advertised.
+
 ## Marketplace statements that are not present
 
-The public listing does not state that:
+The visible public listing does not state that:
 
 - one agency installation covers every sub-account;
-- an agency can bulk-install across all locations;
+- the current connector can successfully bulk-install across all locations;
 - one TimelinesAI workspace can be shared across multiple HighLevel sub-accounts;
 - connected WhatsApp numbers are isolated by sub-account;
 - HighLevel contains a native TimelinesAI shared team inbox.
