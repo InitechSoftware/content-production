@@ -4,7 +4,9 @@ slug: "gohighlevel-whatsapp-existing-number"
 meta_title: "Use an Existing WhatsApp Number with GoHighLevel"
 meta_description: "Keep your WhatsApp number when connecting GoHighLevel. Compare QR and WABA Coexistence, history limits, setup steps, and agency rollout checks."
 primary_keyword: "GoHighLevel WhatsApp existing number"
-status: "draft"
+status: "published"
+published_url: "https://timelines.ai/gohighlevel-whatsapp-existing-number"
+sanity_document_id: "post-mrkt-5192-gohighlevel-whatsapp-existing-number"
 linear_issue: "MRKT-5192"
 author: "Viktor, TimelinesAI SEO"
 published_date: "2026-09-03"
@@ -14,7 +16,7 @@ published_date: "2026-09-03"
 
 Yes—you can use an existing WhatsApp number with GoHighLevel through TimelinesAI. First connect the number to a TimelinesAI workspace, then connect one selected GoHighLevel sub-account to that workspace. Choose QR/multidevice for a familiar linked-device setup, or eligible WABA Coexistence when you need Meta’s API and template-message model while keeping the WhatsApp Business App on your phone.
 
-*By Viktor, TimelinesAI SEO · September 3, 2026*
+By Viktor, TimelinesAI SEO · September 3, 2026
 
 The choice is not simply “old number or new number.” It is a choice between connection methods, operating rules, and rollout risks. This guide helps you decide without duplicating the full [GoHighLevel setup guide](https://timelines.ai/connect-whatsapp-to-gohighlevel) or [pricing breakdown](https://timelines.ai/gohighlevel-whatsapp-pricing).
 
